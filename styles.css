@@ -1,0 +1,122 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.cost-estimator_wrapper {
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cost-estimator_component {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows, auto-sized */
+  gap: 4rem 4rem; /* 4rem column gap, 2rem row gap */
+  justify-items: stretch; /* Align items horizontally (X-axis) */
+  align-items: stretch; /* Align items vertically (Y-axis) */
+}
+
+.cost-estimator_inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cost-estimator_input-wrapper {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.cost-estimate_input {
+  border: 1px solid #a3826c;
+  border-radius: 4px;
+  min-height: 48px;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+.text-size-small {
+  font-size: 0.875rem;
+}
+
+.text-weight-medium {
+  font-weight: 500;
+}
+
+.margin-bottom {
+  margin-bottom: 24px;
+}
+
+.margin-xxsmall {
+  margin-bottom: 8px;
+}
+
+.cost-estimator_outputs-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cost-estimator_output-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cost-estimator_output-label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cost-estimator_output-label {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.cost-estimator_info-trigger:hover .cost-estimator_info-message {
+  display: block;
+}
+
+.cost-estimator_subscription-output,
+.cost-estimator_contribution-output,
+.cost-estimator_total-output {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.cost-estimator_custom-pricing {
+  display: none;
+  position: absolute;
+  text-align: center;
+  flex-direction: column;
+  padding: 16px;
+  padding-top: 48px;
+  background-color: #f1f3f5;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+.button.is-link.is-underlined {
+  text-decoration: underline;
+  color: #007bff;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cost-estimator_error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 16px;
+}

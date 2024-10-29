@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cost-estimator_wrapper">
+      <div class="cost-estimator_component">
+        <div id="w-node-_476d24ab-0512-92bb-e1bf-b55de694cc94-d0b91392">
+          <div class="w-embed">
+            <div class="cost-estimator_inputs-wrapper">
+              <div
+                class="cost-estimator_input-wrapper margin-bottom margin-medium"
+              >
+                <label
+                  class="text-size-small text-weight-medium margin-bottom margin-xxsmall"
+                  for="numMembers"
+                  >How many people will you be signing up?</label
+                >
+                <input
+                  class="cost-estimate_input"
+                  type="number"
+                  id="numMembers"
+                  min="0"
+                  placeholder="0"
+                />
+              </div>
+              <div class="cost-estimator_input-wrapper">
+                <label
+                  class="text-size-small text-weight-medium margin-bottom margin-xxsmall"
+                  for="numMembers"
+                  >How many of those are 55 or older?</label
+                >
+                <input
+                  class="cost-estimate_input"
+                  type="number"
+                  id="numOver55"
+                  min="0"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+
+            <style>
+              .cost-estimator_input-wrapper {
+                width: 100%;
+              }
+
+              .cost-estimate_input {
+                border: 1px solid #a3826c;
+                border-radius: 0px;
+                min-height: 3rem;
+                width: 100%;
+                padding: 4px 8px;
+                font-size: 1rem;
+              }
+            </style>
+          </div>
+        </div>
+        <div
+          id="w-node-_476d24ab-0512-92bb-e1bf-b55de694cc96-d0b91392"
+          class="cost-estimator_outputs-wrapper"
+        >
+          <div class="cost-estimator_output-wrapper">
+            <div class="cost-estimator_output-label-wrapper">
+              <div class="cost-estimator_output-label">Subscriptions</div>
+              <div
+                data-w-id="476d24ab-0512-92bb-e1bf-b55de694cc9b"
+                class="cost-estimator_info-trigger"
+              ></div>
+            </div>
+            <span id="subscription" class="cost-estimator_subscription-output"
+              >$0</span
+            >
+          </div>
+          <div class="margin-bottom margin-small">
+            <div class="cost-estimator_output-wrapper">
+              <div class="cost-estimator_output-label-wrapper">
+                <div class="cost-estimator_output-label">Contributions</div>
+                <div
+                  data-w-id="476d24ab-0512-92bb-e1bf-b55de694cca6"
+                  class="cost-estimator_info-trigger"
+                ></div>
+              </div>
+              <span id="contribution" class="cost-estimator_contribution-output"
+                >$0</span
+              >
+            </div>
+          </div>
+          <div class="cost-estimator_output-wrapper">
+            <div class="cost-estimator_output-label heading-style-h5">
+              Monthly Total &nbsp;
+            </div>
+            <span
+              id="total"
+              class="cost-estimator_total-output heading-style-h5"
+              >$0</span
+            >
+          </div>
+          <div id="customPricing" class="cost-estimator_custom-pricing">
+            <div class="text-size-small text-align-center">
+              That's a lot of members! Please schedule time with a Community
+              Care Specialist for pricing.
+            </div>
+            <a
+              data-w-id="476d24ab-0512-92bb-e1bf-b55de694ccb4"
+              href="#"
+              class="button is-link is-underlined w-button"
+              >Get Custom Pricing</a
+            >
+          </div>
+        </div>
+        <div
+          id="errorMessage"
+          class="cost-estimator_error-message w-node-_476d24ab-0512-92bb-e1bf-b55de694ccb6-d0b91392"
+        ></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/gh/nickolascrim/communitycare-website@1/index.js"></script>
+</html>
